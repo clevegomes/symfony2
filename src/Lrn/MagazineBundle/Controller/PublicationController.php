@@ -27,6 +27,10 @@ class PublicationController extends Controller
      */
     public function indexAction()
     {
+//        $user = $this->container->get('fos_user.user_manager')
+//            ->findUserByUsername('cleve');
+
+        print_r($user);exit;
         $em = $this->getDoctrine()->getManager();
 
         $entities = $em->getRepository('LrnMagazineBundle:Publication')->findAll();

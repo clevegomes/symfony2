@@ -3,6 +3,9 @@ lrn_magazine:
     type:     annotation
     prefix:   /
 
+_user_bundle:
+    resource: "@LrnUserBundle/Resources/config/routing.yml"
+
 app:
     resource: @AppBundle/Controller/
     type:     annotation
